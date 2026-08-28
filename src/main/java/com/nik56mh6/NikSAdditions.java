@@ -13,6 +13,10 @@ public class NikSAdditions implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
+	// for future use with mixin
+	// public static final double HAPPY_GHAST_MOUNTED_SPEED = 0.7;
+	// public static final double HAPPY_GHAST_UNMOUNTED_SPEED = 0.07;
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
