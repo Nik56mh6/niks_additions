@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "niksadditions",
+	"version": "${version}",
+	"name": "Nik's Additions (Mod)",
+	"description": "My personal additions to the game",
+	"authors": [
+		"nik56mh6"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/niksadditions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nik56mh6.NikSAdditions"
+		],
+		"client": [
+			"com.nik56mh6.client.NikSAdditionsClient"
+		],
+		"fabric-datagen": [
+			"com.nik56mh6.datagen.NikSAdditionsDataGenerator"
+		]
+	},
+	"mixins": [
+		"niks-additions.mixins.json",
+		{
+			"config": "niks-additions.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
