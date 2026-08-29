@@ -22,7 +22,7 @@
 			"com.nik56mh6.client.NikSAdditionsClient"
 		],
 		"fabric-datagen": [
-			"com.nik56mh6.datagen.NikSAdditionsDataGenerator"
+			"com.nik56mh6.datagen.diofesticciola"
 		]
 	},
 	"mixins": [
