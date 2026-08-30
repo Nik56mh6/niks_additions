@@ -1,4 +1,4 @@
-My first mod as a java newbie with whatever i think i should change/add/remove. [Showcase](/read_me_assets/pics/)
+My first mod as a java newbie with whatever i think i should change/add/remove. [Showcase](/read_me_assets/pics/) 
 -
 Items
 -
@@ -8,4 +8,4 @@ Items
 gameChanges
 -
 - ImmediateRespawn = true forced by default.
-- Happy Ghast's flying speed is increased by 10x. 10x.
+- Happy Ghast's flying speed is increased by 10x.
