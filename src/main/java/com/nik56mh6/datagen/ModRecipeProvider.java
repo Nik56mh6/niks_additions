@@ -14,7 +14,6 @@ import net.minecraft.world.item.Items;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 
-import com.nik56mh6.NikSAdditions;
 import com.nik56mh6.ModItems;
 
 

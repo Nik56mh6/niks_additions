@@ -11,7 +11,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jspecify.annotations.NonNull;
-import com.nik56mh6.ModItems;
 
 public class Gourdofreturn extends Item {
     public Gourdofreturn(Item.Properties properties) {super(properties.rarity(Rarity.EPIC).stacksTo(1));}

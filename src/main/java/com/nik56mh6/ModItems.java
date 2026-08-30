@@ -8,8 +8,6 @@ import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTabOutput;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.packs.resources.Resource;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
