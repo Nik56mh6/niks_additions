@@ -4,5 +4,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
 public class DragonSword extends Item {
-    public DragonSword(Item.Properties properties) {super(properties.rarity(Rarity.EPIC).stacksTo(1));}
+    public DragonSword(Item.Properties properties)
+    {
+        super(properties.rarity(Rarity.EPIC).stacksTo(1).rarity(Rarity.EPIC).sword(
+                DragonSwordMaterial.DRAGON_SWORD_MATERIAL,
+                14f,
+                1f));
+    }
 }

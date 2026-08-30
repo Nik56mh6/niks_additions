@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "multi_bench",
+  "key": {
+    "a": "minecraft:end_crystal",
+    "b": "minecraft:dragon_egg"
+  },
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "result": {
+    "count": 2,
+    "id": "minecraft:dragon_egg"
+  }
+}
