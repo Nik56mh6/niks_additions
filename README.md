@@ -7,4 +7,4 @@ My first mod as a java newbie with whatever i think i should change/add/remove
 gameChanges
 -
 - ImmediateRespawn = true is forced by default to true.
-- Happy Ghast's flying speed is increased by 10x
+- Happy Ghast's flying speed is increased by 10x.
