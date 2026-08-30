@@ -1,2 +1,3 @@
-Version 1.0.2
-My own mod for no commercial Purposes
+- / VERSION 1.0.0 /
+- Gourd of Return for players who love keepInventory = true but hate to /kill
+- Happy Ghast's flying speed is increased by 10x
