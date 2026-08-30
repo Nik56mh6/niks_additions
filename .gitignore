@@ -41,5 +41,5 @@ replay_*.log
 
 # my things
 
-to_do.md
+src/main/resources/data/to_do.md
 docs_and_references/
