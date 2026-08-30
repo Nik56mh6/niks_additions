@@ -9,14 +9,14 @@
   {
     "firstperson_righthand":
     {
-      "rotation": [-117.2, -77.28, -9],
-      "translation": [4.63, 3.25, -7],
+      "rotation": [51.2, -77.28, -9],
+      "translation": [10, 3.25, -7],
       "scale": [1.5, 1.5, 1.5]
     },
     "firstperson_lefthand":
     {
-      "rotation": [77, -111, 94],
-      "translation": [4.75, 3.25, -7],
+      "rotation": [-34, -77, -81],
+      "translation": [10, 3.25, -7],
       "scale": [1.5, 1.5, 1.5]
     },
 
