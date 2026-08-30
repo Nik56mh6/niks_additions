@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "multi_bench",
+  "key": {
+    "a": "#minecraft:planks",
+    "b": "minecraft:gold_ingot",
+    "c": "minecraft:diamond"
+  },
+  "pattern": [
+    " a ",
+    "bcb",
+    "aaa"
+  ],
+  "result": {
+    "id": "niksadditions:gourd_of_return"
+  }
+}

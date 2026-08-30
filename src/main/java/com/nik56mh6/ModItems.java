@@ -5,19 +5,16 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
-import com.nik56mh6.ItemIds;
 import net.minecraft.world.item.Rarity;
 
 import java.util.function.Function;
 
 public class ModItems implements ModInitializer {
 
-    public static final ResourceKey<Item> GOURD_OF_RETURN_KEY = ItemIds.create("gourd_of_return");
+    public static final ResourceKey<Item> GOURD_OF_RETURN_KEY = ModItemIds.create("gourd_of_return");
     public static final Item GOURD_OF_RETURN = register(
             GOURD_OF_RETURN_KEY,
             Gourdofreturn::new,
