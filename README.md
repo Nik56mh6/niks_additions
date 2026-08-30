@@ -1,3 +1,3 @@
 - / VERSION 1.0.0 /
-- Gourd of Return for players who love keepInventory = true but hate to /kill
+- Gourd of Return (recommended with ImmediateRespawn = true) for players who love keepInventory = true but hate to /kill
 - Happy Ghast's flying speed is increased by 10x
