@@ -44,33 +44,33 @@ public class DragonSword extends Item {
         return retval;
     }
 
-    public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
-        if (level.isClientSide()) {
-            return InteractionResult.PASS;
-        }
-
-        Vec3 direction = player.getViewVector(1.0F);
-        Vec3 startPos = player.position().add(3, player.getEyeHeight(), 0);
-
-        double length = 25.0;
-        double radius = 4.0;
-        int cloudCount = 10;
-
-        for (int i = 1; i <= cloudCount; i++) {
-            double distance = i * (length / cloudCount);
-            Vec3 cloudPos = startPos.add(direction.scale(distance));
-
-            AreaEffectCloud cloud = new AreaEffectCloud(level, cloudPos.x, cloudPos.y, cloudPos.z);
-            cloud.setRadius((float) radius);
-            cloud.setDuration(60);
-            cloud.setCustomParticle(SpellParticleOption.create(ParticleTypes.INSTANT_EFFECT, 0x8B00FF, 0.5F));
-            cloud.setOwner(player);
-
-            MobEffectInstance effect = new MobEffectInstance(MobEffects.INSTANT_DAMAGE, 1, 5);
-            cloud.addEffect(effect);
-            level.addFreshEntity(cloud);
-        }
-
-        return InteractionResult.SUCCESS;
-    }
+//    public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
+//        if (level.isClientSide()) {
+//            return InteractionResult.PASS;
+//        }
+//
+//        Vec3 direction = player.getViewVector(1.0F);
+//        Vec3 startPos = player.position().add(3, player.getEyeHeight(), 0);
+//
+//        double length = 25.0;
+//        double radius = 4.0;
+//        int cloudCount = 10;
+//
+//        for (int i = 1; i <= cloudCount; i++) {
+//            double distance = i * (length / cloudCount);
+//            Vec3 cloudPos = startPos.add(direction.scale(distance));
+//
+//            AreaEffectCloud cloud = new AreaEffectCloud(level, cloudPos.x, cloudPos.y, cloudPos.z);
+//            cloud.setRadius((float) radius);
+//            cloud.setDuration(60);
+//            cloud.setCustomParticle(SpellParticleOption.create(ParticleTypes.INSTANT_EFFECT, 0x8B00FF, 0.5F));
+//            cloud.setOwner(player);
+//
+//            MobEffectInstance effect = new MobEffectInstance(MobEffects.INSTANT_DAMAGE, 1, 5);
+//            cloud.addEffect(effect);
+//            level.addFreshEntity(cloud);
+//        }
+//
+//        return InteractionResult.SUCCESS;
+//    }
 }
