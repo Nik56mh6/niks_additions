@@ -21,7 +21,7 @@ public class DragonSwordMaterial {
     public static final ToolMaterial DRAGON_SWORD_MATERIAL = new ToolMaterial(
             INCORRECT_FOR_NETHERITE_TOOL,
             4046,
-            -2.2F,
+            0F,
             6.0F,
             44,
             DragonSwordMaterial.REPAIRS_DRAGON_SWORD
