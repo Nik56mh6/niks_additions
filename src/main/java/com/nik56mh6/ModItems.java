@@ -1,11 +1,13 @@
 package com.nik56mh6;
 
-import com.nik56mh6.ItemScripts.Gourdofreturn;
+import com.nik56mh6.ItemScripts.*;
+import com.nik56mh6.ItemScripts.dragon_sword.DragonSword;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
@@ -31,6 +33,12 @@ public class ModItems implements ModInitializer {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .register((creativeTab) -> creativeTab.accept(ModItems.GOURD_OF_RETURN));
     }
+
+    public static final ResourceKey<Item> DRAGON_SWORD_KEY = ModItemIds.create("dragon_sword");
+    public static final Item DRAGON_SWORD = register(
+            DRAGON_SWORD_KEY,
+            DragonSword::new,
+            new Item.Properties().stacksTo(1).rarity(Rarity.EPIC));
 
     @Override
     public void onInitialize() {
