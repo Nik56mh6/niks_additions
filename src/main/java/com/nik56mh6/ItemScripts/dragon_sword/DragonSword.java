@@ -66,7 +66,7 @@ public class DragonSword extends Item {
             cloud.setCustomParticle(SpellParticleOption.create(ParticleTypes.INSTANT_EFFECT, 0x8B00FF, 0.5F));
             cloud.setOwner(player);
 
-            MobEffectInstance effect = new MobEffectInstance(MobEffects.INSTANT_DAMAGE, 1, 4);
+            MobEffectInstance effect = new MobEffectInstance(MobEffects.INSTANT_DAMAGE, 1, 5);
             cloud.addEffect(effect);
             level.addFreshEntity(cloud);
         }
