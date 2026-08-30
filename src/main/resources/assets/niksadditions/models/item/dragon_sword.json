@@ -9,7 +9,7 @@
   {
     "firstperson_righthand":
     {
-      "rotation": [51.2, -77.28, -9],
+      "rotation": [-51.2, -77.28, -9],
       "translation": [10, 3.25, -7],
       "scale": [1.5, 1.5, 1.5]
     },
