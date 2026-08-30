@@ -20,10 +20,10 @@ public class DragonSwordMaterial {
 
     public static final ToolMaterial DRAGON_SWORD_MATERIAL = new ToolMaterial(
             INCORRECT_FOR_NETHERITE_TOOL,
-            3046,
-            2.4F,
-            7.0F,
-            40,
+            4046,
+            1F,
+            6.0F,
+            44,
             DragonSwordMaterial.REPAIRS_DRAGON_SWORD
     );
 }
