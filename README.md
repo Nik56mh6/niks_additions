@@ -1,6 +1,7 @@
-My first mod as a java newbie with whatever i think i should change/add/remove
+My first mod as a java newbie with whatever i think i should change/add/remove. [Showcase](/read_me_assets/pics/) 
 -
-- / VERSION 1.0.1 / - [Showcase](/read_me_assets/pics/) 
+Items
+-
 - [Gourd of Return](/read_me_assets/pics/items/gourd/) for players who love keepInventory = true but hate to /kill
 - [The Dragonslayer](/read_me_assets/pics/items/dragonslayer) greatsword, a very endgame sword (wip effects, sound, ability) + dragon egg duplication recipe
 
