@@ -27,7 +27,7 @@ public class DragonSword extends Item {
         super(properties.rarity(Rarity.EPIC).stacksTo(1).rarity(Rarity.EPIC).sword(
                 DragonSwordMaterial.DRAGON_SWORD_MATERIAL,
                 14F,
-                -3.2F));
+                -3.3F));
     }
 
     public @NonNull ItemUseAnimation getUseAnimation(@NonNull ItemStack stack) {
