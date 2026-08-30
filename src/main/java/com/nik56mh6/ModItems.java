@@ -39,7 +39,7 @@ public class ModItems implements ModInitializer {
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .register((creativeTab) -> creativeTab.accept(ModItems.GOURD_OF_RETURN));
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
                 .register((FabricCreativeModeTabOutput creativeTab) -> creativeTab.accept(ModItems.DRAGON_SWORD));
     }
 
