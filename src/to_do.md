@@ -1,2 +1,0 @@
-- make an angelic sounding thing: + an effect when you die from the gourd
-- add a mixin or whatever to force immediaterespawn to True
