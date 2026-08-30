@@ -2,4 +2,5 @@ My first mod as a java newbie with whatever i think i should change/add/remove
 
 - / VERSION 1.0.0 /
 - Gourd of Return (recommended with ImmediateRespawn = true) for players who love keepInventory = true but hate to /kill
+![Alt text](read_me_assets/pics/gourd.png)
 - Happy Ghast's flying speed is increased by 10x
