@@ -17,13 +17,5 @@ public class HappyGhastChanges {
     )
     private float modifySpeed(float speed) {
         return 0.7F;
-    }
+    } // default is 0.07
 }
-
-//    @ModifyConstant(
-//            method = "createAttributes",
-//            constant = @Constant(doubleValue = 0.05D, ordinal = 0)
-//    )
-//    private static double modifyFlyingSpeed(double original) {
-//        return 0.15D;
-//    }

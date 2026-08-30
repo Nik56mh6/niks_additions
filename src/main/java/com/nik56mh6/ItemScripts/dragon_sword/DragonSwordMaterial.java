@@ -4,13 +4,10 @@ import com.nik56mh6.NikSAdditions;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.level.block.Block;
-import com.nik56mh6.ModItems;
 
 public class DragonSwordMaterial {
     public static final TagKey<Item> REPAIRS_DRAGON_SWORD = TagKey.create(BuiltInRegistries.ITEM.key(), Identifier.fromNamespaceAndPath(NikSAdditions.MOD_ID, "repairs_dragon_sword"));
