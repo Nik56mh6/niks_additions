@@ -13,12 +13,15 @@ import net.minecraft.world.item.Items;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import com.nik56mh6.datagen.ModRecipeProvider;
 
 import com.nik56mh6.ModItems;
+import org.jspecify.annotations.NonNull;
 
 
 // ---------------------------------------------------------- IF YOU EVER FORGET
 // https://docs.fabricmc.net/develop/data-generation/recipes
+// ABSURDLY IMPORTANT: IF ONE RECIPE BREAKS THE ONES AFTER IT WONT GENERATE (THE PREVIOUS ONES IF CORRECT YES
 // ----------------------------------------------------------
 
 
@@ -46,12 +49,38 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                         .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                         .save(output);
+                shaped(RecipeCategory.TOOLS, ModItems.DRAGON_SWORD, 1)
+                        .pattern("aan")
+                        .pattern("ada")
+                        .pattern("saa")
+                        .define('n', Items.NETHER_STAR)
+                        .define('a', Items.END_CRYSTAL)
+                        .define('d', Items.DRAGON_EGG)
+                        .define('s', Items.STICK)
+                        .group("multi_bench")
+                        .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
+                        .unlockedBy(getHasName(Items.DRAGON_EGG), has(Items.DRAGON_EGG))
+                        .unlockedBy(getHasName(Items.END_CRYSTAL), has(Items.END_CRYSTAL))
+                        .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
+                        .unlockedBy(getHasName(Items.STICK), has(Items.STICK))
+                        .save(output);
+                // recipe for duplication of the dragon egg
+                shaped(RecipeCategory.MISC, Items.DRAGON_EGG, 2)
+                        .pattern("aaa")
+                        .pattern("aba")
+                        .pattern("aaa")
+                        .define('a', Items.END_CRYSTAL)
+                        .define('b', Items.DRAGON_EGG)
+                        .group("multi_bench")
+                        .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
+                        .unlockedBy(getHasName(Items.DRAGON_EGG), has(Items.DRAGON_EGG))
+                        .save(output);
             }
         };
     }
 
     @Override
-    public String getName() {
+    public @NonNull String getName() {
         return "ModRecipeProvider";
     }
 }

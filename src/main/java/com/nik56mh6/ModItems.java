@@ -2,6 +2,7 @@ package com.nik56mh6;
 
 import com.nik56mh6.ItemScripts.*;
 import com.nik56mh6.ItemScripts.dragon_sword.DragonSword;
+import com.nik56mh6.ItemScripts.dragon_sword.DragonSwordMaterial;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTabOutput;
