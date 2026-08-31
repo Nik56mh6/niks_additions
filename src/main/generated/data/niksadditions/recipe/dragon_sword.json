@@ -5,11 +5,10 @@
   "key": {
     "a": "minecraft:end_crystal",
     "d": "minecraft:dragon_egg",
-    "n": "niksadditions:void_star",
-    "s": "minecraft:stick"
+    "s": "niksadditions:void_stick"
   },
   "pattern": [
-    "aan",
+    "aaa",
     "ada",
     "saa"
   ],

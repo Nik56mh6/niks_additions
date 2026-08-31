@@ -41,21 +41,21 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_stick": {
-      "conditions": {
-        "items": [
-          {
-            "items": "minecraft:stick"
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_the_recipe": {
       "conditions": {
         "recipe": "niksadditions:dragon_sword"
       },
       "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_void_stick": {
+      "conditions": {
+        "items": [
+          {
+            "items": "niksadditions:void_stick"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
     }
   },
   "requirements": [
@@ -65,7 +65,7 @@
       "has_dragon_egg",
       "has_end_crystal",
       "has_nether_star",
-      "has_stick"
+      "has_void_stick"
     ]
   ],
   "rewards": {

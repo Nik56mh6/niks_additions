@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crafting_table"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "niksadditions:void_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_void_star": {
+      "conditions": {
+        "items": [
+          {
+            "items": "niksadditions:void_star"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crafting_table",
+      "has_void_star"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "niksadditions:void_stick"
+    ]
+  }
+}

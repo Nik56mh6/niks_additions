@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "multi_bench",
+  "key": {
+    "l": "#minecraft:logs",
+    "v": "niksadditions:void_star"
+  },
+  "pattern": [
+    " ll",
+    "lvl",
+    "ll "
+  ],
+  "result": {
+    "id": "niksadditions:void_stick"
+  }
+}
