@@ -1,7 +1,9 @@
 // 26.2	-999999999-01-01T00:00:00	Nik's Additions (Mod)/ModRecipeProvider
 653265e4bbff6d5a8cf75833df85256b20a74400 data/niksadditions/advancement/recipes/misc/dragon_egg.json
 9c78de1aa20eed6d2e245be77448b953b9bbc038 data/niksadditions/advancement/recipes/misc/gourd_of_return.json
+12960a1a5ab376242a700165fb6a12937b9d132d data/niksadditions/advancement/recipes/misc/void_star.json
 de506252bf171c7513b8d84f35231212d8b5d23e data/niksadditions/advancement/recipes/tools/dragon_sword.json
 f9938b138e360d34ef6329e45c08c235ba2bd905 data/niksadditions/recipe/dragon_egg.json
-4b37e3d6ac9183d197246513cb349db973f4de99 data/niksadditions/recipe/dragon_sword.json
+2d53a06a0e541171e9f636d1a3b7a463e55094a9 data/niksadditions/recipe/dragon_sword.json
 04a848dba314ad93456dffbe9d5f19ae7f467239 data/niksadditions/recipe/gourd_of_return.json
+b40b769c19377358f0e92e93fe70ed0f3cc0df82 data/niksadditions/recipe/void_star.json

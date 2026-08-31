@@ -44,14 +44,16 @@ public class DragonSword extends Item {
         return retval;
     }
 
-//    public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
-//        if (level.isClientSide()) {
-//            return InteractionResult.PASS;
-//        }
-//
-//        Vec3 direction = player.getViewVector(1.0F);
-//        Vec3 startPos = player.position().add(3, player.getEyeHeight(), 0);
-//
+    public @NonNull InteractionResult use(Level level, @NonNull Player player, @NonNull InteractionHand hand) {
+        if (level.isClientSide()) {
+            return InteractionResult.PASS;
+        }
+
+        Vec3 direction = player.getViewVector(1.0F);
+        Vec3 startPos = player.position().add(3, player.getEyeHeight(), 0);
+
+
+
 //        double length = 25.0;
 //        double radius = 4.0;
 //        int cloudCount = 10;
@@ -70,7 +72,7 @@ public class DragonSword extends Item {
 //            cloud.addEffect(effect);
 //            level.addFreshEntity(cloud);
 //        }
-//
-//        return InteractionResult.SUCCESS;
-//    }
+
+        return InteractionResult.SUCCESS;
+    }
 }

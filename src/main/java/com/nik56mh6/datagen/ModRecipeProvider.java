@@ -50,10 +50,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                         .save(output);
                 shaped(RecipeCategory.TOOLS, ModItems.DRAGON_SWORD, 1)
-                        .pattern("aan")
+                        .pattern("aaa")
                         .pattern("ada")
                         .pattern("saa")
-                        .define('n', Items.NETHER_STAR)
+                        .define('n', ModItems.VOID_STAR)
                         .define('a', Items.END_CRYSTAL)
                         .define('d', Items.DRAGON_EGG)
                         .define('s', Items.STICK)
@@ -74,6 +74,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("multi_bench")
                         .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
                         .unlockedBy(getHasName(Items.DRAGON_EGG), has(Items.DRAGON_EGG))
+                        .save(output);
+                shaped(RecipeCategory.MISC, ModItems.VOID_STAR, 1)
+                        .pattern("aaa")
+                        .pattern("aaa")
+                        .pattern("aaa")
+                        .define('a', Items.NETHER_STAR)
+                        .group("multi_bench")
+                        .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
+                        .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
                         .save(output);
             }
         };
