@@ -55,6 +55,8 @@ public class ModItems implements ModInitializer {
                 .register((FabricCreativeModeTabOutput creativeTab) -> creativeTab.accept(ModItems.DRAGON_SWORD));
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
                 .register((creativeTab) -> creativeTab.accept(ModItems.VOID_STAR));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
+                .register((creativeTab) -> creativeTab.accept(ModItems.VOID_STICK));
     }
 
     @Override
