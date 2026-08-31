@@ -5,6 +5,6 @@ import net.minecraft.world.item.Rarity;
 
 public class VoidStar extends Item {
     public VoidStar(Item.Properties properties) {
-        super(properties.stacksTo(1).rarity(Rarity.EPIC));
+        super(properties.stacksTo(16).rarity(Rarity.EPIC));
     }
 }
