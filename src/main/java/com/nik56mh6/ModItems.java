@@ -2,7 +2,6 @@ package com.nik56mh6;
 
 import com.nik56mh6.ItemScripts.*;
 import com.nik56mh6.ItemScripts.dragon_sword.DragonSword;
-import com.nik56mh6.ItemScripts.void_items.*;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTabOutput;
@@ -36,27 +35,11 @@ public class ModItems implements ModInitializer {
             DragonSword::new,
             new Item.Properties());
 
-    public static final ResourceKey<Item> VOID_STAR_KEY = ModItemIds.create("void_star");
-    public static final Item VOID_STAR = register(
-            VOID_STAR_KEY,
-            VoidStar::new,
-            new Item.Properties());
-
-    public static final ResourceKey<Item> VOID_STICK_KEY = ModItemIds.create("void_stick");
-    public static final Item VOID_STICK = register(
-            VOID_STICK_KEY,
-            VoidStick::new,
-            new Item.Properties());
-
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .register((creativeTab) -> creativeTab.accept(ModItems.GOURD_OF_RETURN));
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COMBAT)
                 .register((creativeTab) -> creativeTab.accept(ModItems.DRAGON_SWORD));
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-                .register((creativeTab) -> creativeTab.accept(ModItems.VOID_STAR));
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
-                .register((creativeTab) -> creativeTab.accept(ModItems.VOID_STICK));
     }
 
     @Override

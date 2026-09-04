@@ -50,18 +50,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(Items.GOLD_INGOT), has(Items.GOLD_INGOT))
                         .save(output);
                 shaped(RecipeCategory.TOOLS, ModItems.DRAGON_SWORD, 1)
-                        .pattern("aaa")
+                        .pattern("aan")
                         .pattern("ada")
                         .pattern("saa")
                         .define('a', Items.END_CRYSTAL)
                         .define('d', Items.DRAGON_EGG)
-                        .define('s', ModItems.VOID_STICK)
+                        .define('s', Items.STICK)
+                        .define('n', Items.NETHER_STAR)
                         .group("multi_bench")
                         .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
                         .unlockedBy(getHasName(Items.DRAGON_EGG), has(Items.DRAGON_EGG))
                         .unlockedBy(getHasName(Items.END_CRYSTAL), has(Items.END_CRYSTAL))
                         .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
-                        .unlockedBy(getHasName(ModItems.VOID_STICK), has(ModItems.VOID_STICK))
                         .save(output);
                 // recipe for duplication of the dragon egg
                 shaped(RecipeCategory.MISC, Items.DRAGON_EGG, 2)
@@ -73,25 +73,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("multi_bench")
                         .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
                         .unlockedBy(getHasName(Items.DRAGON_EGG), has(Items.DRAGON_EGG))
-                        .save(output);
-                shaped(RecipeCategory.MISC, ModItems.VOID_STAR, 1)
-                        .pattern("aaa")
-                        .pattern("aaa")
-                        .pattern("aaa")
-                        .define('a', Items.NETHER_STAR)
-                        .group("multi_bench")
-                        .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
-                        .unlockedBy(getHasName(Items.NETHER_STAR), has(Items.NETHER_STAR))
-                        .save(output);
-                shaped(RecipeCategory.MISC, ModItems.VOID_STICK, 1)
-                        .pattern(" ll")
-                        .pattern("lvl")
-                        .pattern("ll ")
-                        .define('l', ItemTags.LOGS)
-                        .define('v', ModItems.VOID_STAR)
-                        .group("multi_bench")
-                        .unlockedBy(getHasName(Items.CRAFTING_TABLE), has(Items.CRAFTING_TABLE))
-                        .unlockedBy(getHasName(ModItems.VOID_STAR), has(ModItems.VOID_STAR))
                         .save(output);
 
             }
